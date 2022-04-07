@@ -1,0 +1,161 @@
+body { 
+    background-color:black;
+    
+}
+
+@font-face {
+    font-family:'stereo';
+    src:url('StereoSans.woff') format('woff');
+}
+
+div.poster {    
+    background-color: black;
+    width:80%;
+    border-radius: 80px;
+    margin-left: 200px;
+}  
+
+div.container {
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+div.col {  
+    outline:2px solid black;
+}
+
+div.text {  
+    font-size:120px;
+    font-family:'stereo';
+    text-align:center;
+    color:black;
+    transition: 0.5s;
+
+}
+/* 4 col grid */
+
+div.w1-4 { 
+    width:25%;
+}
+
+div.w2-4 { 
+    width:50%;
+}
+
+div.w3-4 { 
+    width: 75%;
+}
+
+div.w4-4 { 
+    width: 100%;
+}
+
+/* 3 col grid */
+
+div.w1-3 {
+    width: 33.33%;
+}
+
+div.w2-3 {
+    width: 66.66%;
+}
+
+div.w3-3 {
+    width: 100%;
+}
+
+/* 2 col grid */
+
+div.w1-2 {
+    width: 50%;
+}
+
+div.w2-2 {
+    width:100%;
+}
+
+/* end of grids */
+
+div.FS {    
+    font-size: 600px;
+}
+
+/* extra rule */
+
+div.fontchange.one {  
+
+font-size: 300px;
+
+}
+
+div.fontchange.two { 
+
+    font-size: 400px;
+}
+
+div.fontchange.three {
+
+    font-size: 500px;
+}
+
+
+/* rule 1 */
+
+div.text.one {
+    
+    color: yellow;
+}
+
+div.text.two {
+    
+    color:red;
+}
+
+div.text.three {
+    
+    color: red;
+}
+
+/* rule 2 */
+
+div.text.a {
+    font-weight: 400;
+    text-shadow:  0px 0px 4px red;
+    
+}
+
+div.text.b {
+    font-weight: 600;
+    text-shadow: 0px 0px 8px yellow;
+    
+}
+
+div.text.c {
+    font-weight: 800;
+    text-shadow: 0px 0px 12px red;
+}
+
+/* rule 3 */
+
+div.text.x {
+    font-kerning: inherit;
+    text-align: left;
+}
+
+div.text.y {
+    font-kerning: unset;
+    text-align: right;
+}
+
+div.text.z {
+    font-kerning: normal;
+    text-align: center;
+}
+
+div.small { 
+    font-size:25px;
+    font-family:monospace;
+    text-align:center;
+    color:yellow;
+    margin-left: 200px;
+}
