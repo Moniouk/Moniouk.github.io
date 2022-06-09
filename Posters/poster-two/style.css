@@ -1,0 +1,79 @@
+body { 
+    background-color:pink;
+}
+
+@font-face {
+    font-family: 'til';
+    src:url('Tiltortion.woff') format('woff');
+}
+
+
+div.poster {    
+    background-color: white;
+    width:40%;
+    border-radius: 1000px;
+    margin-left: 580px;
+    border: 200px;
+}   
+
+div.text {  
+    font-size:120px;
+    font-family: 'til';
+    text-align:center;
+    color:black;
+    transition: 0.5s;
+
+}
+
+/* rule 1 */
+
+div.text.one {
+    font-size:20px;
+    
+}
+
+div.text.two {
+    font-size: 50px;
+}
+
+div.text.three {
+    font-size: 70px;
+}
+
+/* rule 2 */
+
+div.text.a {
+    text-align: center;
+    color: black;
+}
+
+div.text.b {
+    text-align: center;
+    color: white;
+}
+
+div.text.c {
+    text-align: center;
+    color: black;
+}
+
+/* rule 3 */
+
+div.text.x {
+    font-weight: 400;
+}
+
+div.text.y {
+    font-weight: 600;
+}
+
+div.text.y {
+    font-weight: 800;
+}
+
+div.small { 
+    font-size:5px;
+    font-family:'Courier New', Courier, monospace;
+    text-align:center;
+    color:black;
+}

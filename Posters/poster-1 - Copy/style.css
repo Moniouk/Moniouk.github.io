@@ -1,0 +1,79 @@
+body { 
+    background-color:black;
+    
+}
+
+@font-face {
+    font-family:'stereo';
+    src:url('StereoSans.woff') format('woff');
+}
+
+div.poster {    
+    background-color: black;
+    width:75%;
+    border-radius: 80px;
+    margin-left: 200px;
+}   
+
+div.text {  
+    font-size:120px;
+    font-family:'stereo';
+    text-align:center;
+    color:white;
+    transition: 0.5s;
+
+}
+
+/* rule 1 */
+
+div.text.one {
+    font-size:80px;
+    color: yellow;
+}
+
+div.text.two {
+    font-size: 100px;
+    color:black;
+}
+
+div.text.three {
+    font-size: 150px;
+    color: red;
+}
+
+/* rule 2 */
+
+div.text.a {
+    font-weight: 200;
+    
+}
+
+div.text.b {
+    font-weight: 400;
+    
+}
+
+div.text.c {
+    font-weight: 600;
+}
+
+/* rule 3 */
+
+div.text.x {
+    font-kerning: inherit;
+}
+
+div.text.y {
+    font-kerning: unset;
+}
+
+div.text.y {
+    font-kerning: normal;
+}
+
+div.small { 
+    font-size:15px;
+    font-family:monospace;
+    text-align:center;
+    color:yellow;
+}
