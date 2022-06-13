@@ -1,7 +1,7 @@
 body {
     background-color: black;
     color:white;
-    font-size: 40px;
+    font-size: 30px;
     font-family: arial;
 }
 
@@ -40,7 +40,7 @@ div.about {
     color: white;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: 30px;
     text-align: center;
     width: 1000px;
     height: 200px;
@@ -116,24 +116,34 @@ div.pointleft {
     z-index: 3;
 }
 
+div.back {  
+    width:100px;
+    height:100px;
+    margin-bottom:auto;
+    bottom:0;
+    z-index: 3;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 300px;
+}
+
 /* navigation end */
 
 
 div.navigation a { 
     color:white;
     text-decoration:none;
+    box-shadow:0px 0px 0px 0px transparent;
 }
 
 div.navigation a:hover {   
     border-radius: 0px;
     background-color: transparent;
-    box-shadow: transparent;
 }
 div.navigation div:hover {  
     box-shadow: 0px 0px 40px 15px white;
     border-radius: 100%;
     background-color: transparent;
-    box-shadow: transparent;
 
 }
 
@@ -148,6 +158,31 @@ div.prayer {
     margin-left:auto;
     margin-right:auto;
 
+}
+
+div.heading {   
+    color:white;
+    font-size: 60px;
+    font-family: arial;
+    text-align: center;
+    width: 1200px;
+    height: 200px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top: 80px;
+    font-style: bold;
+
+}
+
+div.subheading {    
+    color:white;
+    font-size: 40px;
+    font-family: arial;
+    text-align: center;
+    width: 1000px;
+    height: 100px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 /* Button Start */
@@ -178,7 +213,7 @@ div.enter2 {
     color: white;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 20px;
     border: 1px solid white;
     border-radius: 300px;
     width: 300px;
@@ -200,6 +235,22 @@ div.enter3 {
     height: 65px;
     align-items:flex-end;  
 
+}
+
+div.enter4 {    
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 300px;
+    width: 300px;
+    height: 65px;
 }
 
 /* button end */
@@ -318,6 +369,104 @@ div.arch4 {
     margin-top: 400px;
 }
 
+div.arch5 { 
+    width: 400px;
+    height: 400px;
+    margin-right: auto;
+    margin-left:auto;
+    margin-top: 400px;
+}
+
+div.arch6 { 
+    width: 400px;
+    height: 400px;
+    margin-right: auto;
+    margin-left:auto;
+    margin-top: 400px;
+}
+
+div.arch7 { 
+    width: 400px;
+    height: 400px;
+    margin-right: auto;
+    margin-left:auto;
+    margin-top: 400px;
+    padding-bottom: 100px;
+}
+
+div.arch8 { 
+    width: 400px;
+    height: 400px;
+    margin-right: auto;
+    margin-left:auto;
+    margin-top: 400px;
+    padding-bottom: 100px;
+}
+
+
+div.prayicon {  
+    display: flex;
+    flex:wrap;
+    width: 70%;
+    padding-bottom:100px;
+    align-items:flex-start;  
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.glowpray {  
+    width: 500px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.glowhands { 
+    width: 500px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.glowprayb { 
+    width: 500px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.glowcandles {   
+    display: flex;
+    flex:wrap;
+    width: 70%;
+    padding: 20px;
+    align-items:flex-start;  
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.gcandle {   
+    width: 500px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+   
+div.aboutb {    
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:30px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 1000px;
+    height: 200px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* Shrine Page Assets */
+
 div.first { 
     display:flex;
     flex-wrap:wrap;  
@@ -326,6 +475,76 @@ div.first {
     margin-left: auto;
     margin-right: auto;
 }
-   
 
+div.glowcandlessmall {  
+    display: flex;
+    flex:wrap;
+    width: 50%;
+    padding: 20px;
+    align-items:flex-start;  
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px;
+
+}
+
+div.glowcandlesmall {  
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+div.shrineicon {    
+    display: flex;
+    flex:wrap;
+    width: 25%;
+    padding: 20px;
+    align-items:flex-end;  
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.shrineiconleft {   
+    width: 200px;
+    height: 200px;
+    margin-left:-460px;
+    right: 0;
+}
+
+div.shrineiconright {  
+    width: 200px;
+    height: 200px;
+    margin-right:-460px;
+    right: 0;
+}
+
+div.prayiconb {  
+    display: flex;
+    flex:wrap;
+    width: 70%;
+    align-items:flex-start;  
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.button {    
+    display: flex;
+    flex:wrap;
+    width: 70%;
+    align-items:flex-start;  
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.backb {  
+    width:100px;
+    height:100px;
+    margin-bottom:auto;
+    bottom:0;
+    z-index: 3;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
