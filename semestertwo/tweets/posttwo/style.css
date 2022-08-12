@@ -1,0 +1,195 @@
+body {  
+    background: linear-gradient(-45deg, #ffffff, #f07de6, #6ed1f5, #e4b1f8);
+    animation: gradient 15s ease infinite;
+    background-size: 1000% 1000%;
+    height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+@font-face {    
+    font-family:'JUD';
+    src: url('JUD.woff') format('woff');
+}
+
+@font-face {
+    font-family:'montlight';
+    src: url('montlight.woff') format('woff');
+}
+
+div.author {  
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+    color: white;
+}
+
+div.tweeter {   
+    font-family: 'montlight';
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 60px;
+    color: white;
+}
+
+
+div.headline {    
+    font-size: 39px;
+    text-align: center;
+    line-height:150px;
+    text-transform: uppercase;
+    font-family:'montlight';
+    color: white;
+    padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.gemini {   
+    font-size:350px;
+    font-family: 'JUD';
+    text-align: center;
+    line-height: 150px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 63px;
+    z-index: 1;
+    padding-bottom: 300px;
+    text-shadow: 2px 2px 5px rgb(228, 226, 226);
+}
+
+div.virgo { 
+    font-size:350px;
+    font-family: 'JUD';
+    text-align: center;
+    line-height: 150px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 74px;
+    padding-bottom: 375px;
+    text-shadow: 2px 2px 5px rgb(228, 226, 226);
+}
+
+div.libra { 
+    font-size:350px;
+    font-family: 'JUD';
+    text-align: center;
+    line-height: 150px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 74px;
+    padding-bottom: 300px;
+    text-shadow: 2px 2px 5px rgb(228, 226, 226);
+}
+
+div.sagittarius {   
+    font-size:210px;
+    font-family: 'JUD';
+    text-align: center;
+    line-height: 150px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 300px;
+    text-shadow: 2px 2px 5px rgb(228, 226, 226);
+}
+
+div.aquarius {  
+    font-size:220px;
+    font-family: 'JUD';
+    text-align: center;
+    line-height: 150px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 34px;
+    padding-bottom: 350px;
+    text-shadow: 2px 2px 5px rgb(228, 226, 226);
+}
+
+div.oval {
+    width: 700px;
+    height: 100px;
+    border-radius: 100%;   
+    border: 3px dashed white;
+    animation: rotation 18s infinite linear;
+    opacity: 40%;
+    z-index: -1;
+}
+
+div.oval2 { 
+    width: 700px;
+    height: 100px;
+    border-radius: 100%;   
+    border: 3px dashed white;
+    animation: rotation 18s infinite linear;
+    margin-left: auto;
+    opacity: 40%;
+    z-index: -1;
+}
+
+@keyframes rotation {   
+        from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+div.star {  
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    animation: run 9s infinite linear;
+
+}
+
+@keyframes run {    
+    0% {
+        left: 0;
+      }
+      50% {
+        left: 100%;
+      }
+      100% {
+        left: 0;    
+      }
+
+}
+
+div.star2 { 
+    width: 20px;
+    height: 20px;
+    opacity: 35%;
+    position: absolute;
+    animation: run 12s infinite linear;
+}
+
+@keyframes run {    
+    0% {
+        left: 0;
+      }
+      50% {
+        left: 100%;
+      }
+      100% {
+        left: 0;    
+      }
+
+}
