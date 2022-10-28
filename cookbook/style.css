@@ -1,0 +1,585 @@
+body {  
+    background-color: #edebd8;
+    font-size:30px;
+}
+
+* { 
+    box-sizing: border-box;
+}
+
+.splash {
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 9;
+    backdrop-filter: blur(10px);
+    width:100vw;
+    height:100vh;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.splash.remove {
+    display: none;
+}
+
+.splash-message {
+    width:50%;
+    padding:40px;
+    background-color: black;
+    font-size: 20px;
+    color: white;
+    font-family: 'camp medium';
+    text-align: center;
+}
+
+span.play { 
+    cursor: pointer;
+}
+
+span.pause {    
+    cursor:pointer;
+}
+
+span.italic { 
+    font-style: italic;
+}
+
+div.appear {
+    display: none;
+    position: fixed;
+    align-items: center;
+    width: 50vw;
+    height: 600px;
+    margin-top: 10%;
+    margin-bottom: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: scroll;
+    background-color: black;
+    color: white;
+
+}
+
+
+
+div.small.table.line {  
+    font-size: 25px;
+    font-family: 'camp medium';
+}
+
+div.small.table.author {    
+    font-size: 25px;
+    font-family: 'camp bold';
+    margin-top: 20px;
+}
+
+div.small.table.line.article {  
+    font-size: 25px;
+    font-family: 'camp medium';
+}
+
+div.small.line.article.extra {  
+    font-size: 25px;
+    font-family: 'camp medium';
+}
+
+div.tiny.main.header { 
+    font-size: 70px;
+}
+
+div.tiny.content {  
+    font-size: 70px;
+}
+@font-face {
+    font-family: 'camp light';
+    src: url(Compagnon-Light.woff);
+}
+
+@font-face {
+    font-family: 'camp roman';
+    src: url(Compagnon-Roman.woff);
+}
+
+@font-face {
+    font-family: 'camp medium';
+    src: url(Compagnon-Medium.woff);
+}
+
+@font-face {
+    font-family: 'camp bold' ;
+    src: url(Compagnon-Bold.woff);
+}
+
+@font-face {
+    font-family: 'camp italic';
+    src: url(Compagnon-Italic.woff);
+}
+
+img {   
+    width:100%;
+    border-radius: 20px;
+}
+
+div.page {  
+    display:flex;
+    flex-wrap:wrap;
+}
+
+div.item { 
+    width:50%; 
+    padding:10px;
+    overflow:scroll;
+    height:100vh;
+
+}
+
+div.bodycopy {  
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 100%;
+    font-family: monospace;
+    word-spacing: 8px;
+    line-height: 1.2vw;
+    font-size: 1vw;
+
+}
+
+div.bodycopy.first {  
+    margin-left: 20px;
+    margin-top: 80px;
+    width: 100%;
+    font-family: monospace;
+    word-spacing: 8px;
+    font-size: 1vw;
+    line-height: 1.2vw;
+}
+
+div.quote { 
+    font-family: 'camp bold';
+    font-size: 20px;
+    margin-left:auto;
+    margin-right:auto;
+    font-weight: bold;
+    width:600px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+div.header { 
+    font-size:100px;   
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: 'camp roman';
+}
+
+div.main.header {   
+    font-size:120px;   
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: 'camp roman';
+}
+
+div.main.header.table { 
+    font-size:120px;   
+    margin-top: 100px;
+    margin-left: 20px;
+    font-family: 'camp roman';
+    display: flex;
+    flex-wrap: flex;
+}
+
+div.content {  
+    font-size:120px ;
+    font-family: 'camp italic';
+    margin-bottom: 100px;
+}
+div.subheader { 
+    font-size:35px;
+    margin-bottom:50px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+div.main.subheader {    
+    font-size:35px;
+    margin-bottom:50px;
+    margin-top: 100px;
+    margin-left: 20px;
+    font-family: 'camp bold';
+}
+
+div.memories {  
+    font-size:120px ;
+    font-family: 'camp italic';
+}
+
+div.recipenum { 
+    display:flex;
+    flex-wrap:wrap;
+}
+
+div.recipenum.two { 
+    display:flex;
+    flex-wrap:wrap;
+}
+
+div.number.one {    
+    font-size: 20px;
+    font-family: 'camp medium';
+    margin-left: 20px;
+    margin-top: 100px;
+    width: 25vh;
+}
+
+div.number.two {    
+    font-size: 20px;
+    font-family: 'camp medium';
+    margin-left: 20px;
+    margin-top: 300px;
+    width:25vh;
+}
+
+div.number.three {  
+    font-size: 20px;
+    font-family: 'camp medium';
+    margin-top: 500px;
+    width:25vh;
+}
+
+div.number.four {   
+    font-size: 20px;
+    font-family: 'camp medium';
+    margin-top: 700px;
+    width:15vh;
+    margin-bottom: 90px;
+}
+
+div.main.bodycopy {
+    margin-bottom:50px;  
+    margin-left: 20px;
+    margin-top: 100px;
+    width: 500px;
+    font-family: monospace;
+    word-spacing: 8px;
+    line-height: 1.2vw;
+    font-size: 1vw;
+}
+
+/* FOREWORD START */
+
+div.foreword {  
+    font-size:100px;
+    margin-bottom:50px;
+    margin-top: 150px;
+    margin-left: 20px;
+    font-family: 'camp roman';
+}
+
+div.rec {   
+    margin-left: 20px;
+    font-family: 'camp bold';
+    width: 100vh;
+    margin-bottom: 40px;
+    font-size: 15px;
+}
+
+div.rec.first {   
+    margin-left: 20px;
+    font-family: 'camp bold';
+    width: 100vh;
+    margin-bottom: 40px;
+    font-size: 15px;
+    margin-top: 50px;
+}
+
+
+div.main.bodycopy.foreword {    
+    margin-left: 20px;
+    margin-top: 100px;
+    width: 750px;
+    font-family: monospace;
+    word-spacing: 8px;
+    line-height: 1.2vw;
+    font-size: 1vw;
+}
+
+div.main.bodycopy.foreword.second {    
+    margin-left: 20px;
+    width: 750px;
+    font-family: monospace;
+    word-spacing: 8px;
+    line-height: 1.2vw;
+    font-size: 1vw;
+}
+
+/* FOREWORD END */
+
+div.bodycopy {  
+    margin-bottom:50px;  
+    margin-left: 20px;
+    font-family: monospace;
+}
+
+/* TABLE OF CONTENTS START */
+
+div.btn {
+    cursor: pointer;
+}
+
+
+
+div.table.line { 
+    font-family: 'camp medium';
+    font-size: 30px;
+    width: 100vh;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    cursor: pointer;
+
+}
+
+div.table.line.article {    
+    font-family: 'camp medium';
+    font-size: 30px;
+    width: 100vh;
+    margin-bottom: 10px;
+}
+
+div.table.line.article.extra {  
+    font-family: 'camp medium';
+    font-size: 30px;
+    width: 100vh;
+    margin-bottom: 10px;
+    margin-left: 200px;
+}
+
+div.table.author {  
+    font-family: 'camp bold';
+    font-size: 30px;
+    width: 75vh;
+    margin-left: 250px;
+    margin-bottom: 50px;
+}
+
+/* TABLE OF CONTENTS END */
+
+/* ENTREE ARTICLE */
+
+div.entree.header {    
+    display:flex;
+    flex-wrap:wrap;   
+}
+
+div.entree {    
+    font-size: 50px;
+    font-family: 'camp italic';
+    margin-left: 20px;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+div.author {    
+    font-size: 50px;
+    font-family: 'camp bold';
+    margin-left: 20px;
+    margin-top:50px;
+    margin-bottom:100px;
+}
+
+div.subheading {    
+    font-size: 20px;
+    font-family: 'camp medium';
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+
+
+div.bread.entree {    
+    display:flex;
+    flex-wrap:wrap; 
+}
+
+
+div.references { 
+    display:flex;
+    flex-wrap:wrap;   
+
+}
+
+div.ref {   
+    width:33.33%;
+    padding: 5px;
+    font-size:18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+
+}
+
+div.footer {   
+    background-color: black;
+    color: #edebd8;
+    font-family: Arial, Helvetica, sans-serif;
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding-top: 10px;
+    height: 40px;
+    font-family: 'camp medium';
+
+}
+
+
+
+div.nav {   
+    position: fixed;
+    top:0px;
+    right:0px;
+    padding:5px;
+    width:150px;
+    height: 150px;
+}
+
+/* Page Left/Images */
+
+div.images  {   
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.flourbag { 
+    width: 60vh;
+    margin-top: 200px;
+    margin-left:5vw;
+}
+
+div.word.flourbag.one { 
+    font-family: 'camp italic';
+    font-size: 20px;
+    width:0.5vw;
+}
+
+div.flourbowl { 
+    width: 65vh;
+    margin-top: 200px;
+    margin-left: 20px;
+}
+
+div.word.flourbowl.one {    
+    font-family: 'camp bold';
+    font-size: 20px;
+    width:4vh;
+    margin-top: 250px;
+}
+
+div.word.flourbowl.two {    
+    font-family: 'camp bold';
+    font-size: 20px;
+    width: 6vh;
+    margin-top: 300px;
+}
+
+div.word.flourbowl.three {  
+    font-family: 'camp bold';
+    font-size: 20px;
+    width: 8vh;
+    margin-top: 350px;
+}
+
+div.dough { 
+    width: 65vh;
+    margin-top: 150px;
+    margin-left: 10px;
+}
+
+div.word.dough.one {    
+    font-family: 'camp italic';
+    font-size: 20px;
+    width: 3vh;
+    margin-right: 40px;
+    margin-left: 200px;
+}
+
+div.timer { 
+    width: 50vh;
+    margin-top: 150px;
+    margin-left: 10px;
+}
+
+div.word.timer.one {    
+    font-family: 'camp bold';
+    font-size: 20px;
+    width:4vh;
+    margin-top: 250px;
+    margin-left: 40px;
+}
+
+div.word.timer.two {    
+    font-family: 'camp bold';
+    font-size: 20px;
+    width: 6vh;
+    margin-top: 300px;
+}
+
+div.word.timer.three {  
+    font-family: 'camp bold';
+    font-size: 20px;
+    width: 8vh;
+    margin-top: 350px;
+}
+
+div.bakingbread {   
+    width: 80vh;
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
+div.bakingbread.one {   
+    font-family: 'camp italic';
+    font-size: 20px;
+    width: 3vh;
+    margin-right: 40px;
+    margin-left: 700px;
+}
+
+div.loaf {  
+    width: 60vh;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+div.word.loaf.one { 
+    font-family: 'camp bold';
+    font-size: 20px;
+    width:4vh;
+    margin-top: 250px;
+    margin-left: 40px;
+}
+
+div.cutbread {  
+    width: 90vh;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+div.word.cutbread.one { 
+    font-family: 'camp italic';
+    font-size: 20px;
+    width:4vh;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+div.bloodarticle {
+    margin-bottom: 1700px;
+}
