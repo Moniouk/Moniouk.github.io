@@ -7,6 +7,12 @@ body {
     box-sizing: border-box;
 }
 
+a:hover {  
+    cursor: pointer;
+    font-style: italic;
+    color: black;
+}
+
 .splash {
     position:fixed;
     top:0;
@@ -36,6 +42,38 @@ body {
     text-align: center;
 }
 
+div.item.left::-webkit-scrollbar {  
+    width:10px;
+}
+
+div.item.left::-webkit-scrollbar-thumb {    
+    background-color: black;
+    border: 1px solid #edebd8;
+    border-radius: 30px;
+}
+
+div.item.left::-webkit-scrollbar-track {    
+    background-color:#edebd8;
+}
+
+div.item.right::-webkit-scrollbar { 
+    width:20px;
+}
+
+div.item.right::-webkit-scrollbar-thumb {   
+    background-color:#edebd8;
+    border-radius: 0px 30px 30px 0px;
+}
+
+div.item.right::-webkit-scrollbar-track {   
+    background-color:black;
+}
+
+video { 
+    mix-blend-mode: multiply;
+    filter:contrast(5);
+}
+
 span.play { 
     cursor: pointer;
 }
@@ -44,27 +82,101 @@ span.pause {
     cursor:pointer;
 }
 
-span.italic { 
+.photo:hover {  
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.nav:hover {    
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.play:hover {  
+    font-style: italic;
+}
+
+.pause:hover {  
     font-style: italic;
 }
 
 div.appear {
     display: none;
     position: fixed;
-    align-items: center;
-    width: 50vw;
-    height: 600px;
-    margin-top: 10%;
-    margin-bottom: 30%;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
+    width: 28%;
+    height: 800px;
+    margin-left: 12.5vw;
+    margin-top: 12.5vh;
     overflow: scroll;
     background-color: black;
-    color: white;
+    color: #edebd8;
 
 }
 
+div.cursor {    
+    cursor: pointer;
+}
 
+.cursor:hover { 
+    font-style: italic;
+}
+
+div.appear::-webkit-scrollbar { 
+    width:10px;
+}
+
+div.appear::-webkit-scrollbar-thumb {   
+    background-color:#edebd8;
+    border-radius: 0px 2px 2px 0px;
+}
+
+div.appear::-webkit-scrollbar-track {   
+    background-color:black;
+}
+
+
+/* helper classes */
+
+div.ml20 {
+    margin-left: 20px;
+}
+
+div.ml40 {
+    margin-left: 40px;
+}
+
+div.ml60 {
+    margin-left: 40px;
+}
+
+div.ml240 {
+    margin-left: 240px;
+}
+
+div.mb20 {
+    margin-bottom: 20px;
+}
+
+div.mb40 {
+    margin-bottom: 40px;
+}
+
+div.mb60 {
+    margin-bottom: 40px;
+}
+
+
+
+div.fontmedium {
+    font-size: 25px;
+    font-family: 'camp medium';
+}
+
+div.fontbold {
+    font-size: 25px;
+    font-family: 'camp bold';
+}
 
 div.small.table.line {  
     font-size: 25px;
@@ -140,27 +252,34 @@ div.item {
 div.bodycopy {  
     margin-left: 20px;
     margin-top: 20px;
-    width: 100%;
+    width: 90%;
     font-family: monospace;
     word-spacing: 8px;
     line-height: 1.2vw;
     font-size: 1vw;
+    margin-bottom:25px;  
+    margin-left: 20px;
 
 }
 
 div.bodycopy.first {  
     margin-left: 20px;
-    margin-top: 80px;
-    width: 100%;
+    margin-top: 40px;
+    width: 90%;
     font-family: monospace;
     word-spacing: 8px;
     font-size: 1vw;
     line-height: 1.2vw;
 }
 
+div.frontnumbers {  
+    display: flex;
+    flex-wrap: wrap;
+}
+
 div.quote { 
     font-family: 'camp bold';
-    font-size: 20px;
+    font-size: 1vw;
     margin-left:auto;
     margin-right:auto;
     font-weight: bold;
@@ -168,6 +287,22 @@ div.quote {
     text-align: center;
     margin-top: 60px;
     margin-bottom: 60px;
+}
+
+div.first.quote {   
+    font-family: 'camp bold';
+    font-size: 1vw;
+    margin-left:auto;
+    margin-right:auto;
+    font-weight: bold;
+    width:600px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+div.authorquote {   
+    margin-top: 20px;
+    font-size: 1vw;
 }
 
 div.header { 
@@ -179,7 +314,7 @@ div.header {
 
 div.main.header {   
     font-size:120px;   
-    margin-top: 20px;
+    margin-top: 80px;
     margin-left: 20px;
     font-family: 'camp roman';
 }
@@ -218,12 +353,16 @@ div.memories {
     font-family: 'camp italic';
 }
 
-div.recipenum { 
-    display:flex;
-    flex-wrap:wrap;
+div.notes { 
+    font-family: 'camp medium';
+    font-size: 1vw;
 }
 
-div.recipenum.two { 
+.notes:hover {  
+    text-decoration: underline;
+}
+
+div.footnote { 
     display:flex;
     flex-wrap:wrap;
 }
@@ -283,25 +422,25 @@ div.foreword {
 div.rec {   
     margin-left: 20px;
     font-family: 'camp bold';
-    width: 100vh;
+    width: 90%;
     margin-bottom: 40px;
-    font-size: 15px;
+    font-size: 1vw;
 }
 
 div.rec.first {   
     margin-left: 20px;
     font-family: 'camp bold';
-    width: 100vh;
+    width: 90%;
     margin-bottom: 40px;
-    font-size: 15px;
-    margin-top: 50px;
+    font-size: 1vw;
+    margin-top: 30px;
 }
 
 
 div.main.bodycopy.foreword {    
     margin-left: 20px;
     margin-top: 100px;
-    width: 750px;
+    width: 90%;
     font-family: monospace;
     word-spacing: 8px;
     line-height: 1.2vw;
@@ -310,7 +449,7 @@ div.main.bodycopy.foreword {
 
 div.main.bodycopy.foreword.second {    
     margin-left: 20px;
-    width: 750px;
+    width: 90%;
     font-family: monospace;
     word-spacing: 8px;
     line-height: 1.2vw;
@@ -319,11 +458,37 @@ div.main.bodycopy.foreword.second {
 
 /* FOREWORD END */
 
-div.bodycopy {  
-    margin-bottom:50px;  
+/* INDEX START */
+
+div.index {  
+    font-size:100px;
+    margin-bottom:50px;
+    margin-top: 150px;
     margin-left: 20px;
-    font-family: monospace;
+    font-family: 'camp roman';
 }
+
+div.main.bodycopy.index {   
+    margin-left: 20px;
+    margin-top: 100px;
+    width: 90%;
+    font-family: monospace;
+    word-spacing: 8px;
+    line-height: 1.2vw;
+    font-size: 1vw;
+}
+
+div.main.bodycopy.index.second {    
+    margin-left: 20px;
+    width: 90%;
+    font-family: monospace;
+    word-spacing: 8px;
+    line-height: 1.2vw;
+    font-size: 1vw;
+}
+
+
+
 
 /* TABLE OF CONTENTS START */
 
@@ -331,13 +496,11 @@ div.btn {
     cursor: pointer;
 }
 
-
-
 div.table.line { 
     font-family: 'camp medium';
     font-size: 30px;
-    width: 100vh;
-    margin-bottom: 50px;
+    width: 100vw;
+    margin-bottom: 35px;
     margin-left: 20px;
     cursor: pointer;
 
@@ -346,24 +509,21 @@ div.table.line {
 div.table.line.article {    
     font-family: 'camp medium';
     font-size: 30px;
-    width: 100vh;
-    margin-bottom: 10px;
+    width: 100vw;
 }
 
 div.table.line.article.extra {  
     font-family: 'camp medium';
     font-size: 30px;
     width: 100vh;
-    margin-bottom: 10px;
     margin-left: 200px;
 }
 
-div.table.author {  
+div.table.writer {  
     font-family: 'camp bold';
     font-size: 30px;
-    width: 75vh;
-    margin-left: 250px;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
+    margin-left: 20px;
 }
 
 /* TABLE OF CONTENTS END */
@@ -379,7 +539,7 @@ div.entree {
     font-size: 50px;
     font-family: 'camp italic';
     margin-left: 20px;
-    margin-top: 80px;
+    margin-top: 70px;
     margin-bottom: 10px;
 }
 
@@ -391,11 +551,21 @@ div.author {
     margin-bottom:100px;
 }
 
-div.subheading {    
-    font-size: 20px;
-    font-family: 'camp medium';
-    margin-bottom: 30px;
+div.bloodauthor {   
+    font-size: 50px;
+    font-family: 'camp bold';
     margin-left: 20px;
+    margin-top:50px;
+    margin-bottom: 20px;
+}
+
+div.subheading {    
+    font-size: 1.5vw;
+    font-family: 'camp medium';
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: black;
 }
 
 
@@ -420,6 +590,48 @@ div.ref {
     font-weight: bold;
 
 
+}
+
+/* MAIN ARTICLE */
+
+div.main.header {    
+    display:flex;
+    flex-wrap:wrap;   
+}
+
+div.main {    
+    font-size: 50px;
+    font-family: 'camp italic';
+    margin-left: 20px;
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+div.blood.main {    
+    display:flex;
+    flex-wrap:wrap; 
+}
+
+
+
+/* DESSERT ARTICLE */
+
+div.dessert.header {    
+    display:flex;
+    flex-wrap:wrap;   
+}
+
+div.dessert {    
+    font-size: 50px;
+    font-family: 'camp italic';
+    margin-left: 20px;
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+div.cook.dessert {    
+    display:flex;
+    flex-wrap:wrap; 
 }
 
 div.footer {   
@@ -452,6 +664,10 @@ div.nav {
 
 /* Page Left/Images */
 
+div.photo { 
+    mix-blend-mode: multiply;
+}
+
 div.images  {   
     display: flex;
     flex-wrap: wrap;
@@ -470,7 +686,7 @@ div.word.flourbag.one {
 }
 
 div.flourbowl { 
-    width: 65vh;
+    width: 25vw;
     margin-top: 200px;
     margin-left: 20px;
 }
@@ -478,26 +694,26 @@ div.flourbowl {
 div.word.flourbowl.one {    
     font-family: 'camp bold';
     font-size: 20px;
-    width:4vh;
+    width:4vw;
     margin-top: 250px;
 }
 
 div.word.flourbowl.two {    
     font-family: 'camp bold';
     font-size: 20px;
-    width: 6vh;
+    width: 6vw;
     margin-top: 300px;
 }
 
 div.word.flourbowl.three {  
     font-family: 'camp bold';
     font-size: 20px;
-    width: 8vh;
+    width: 8vw;
     margin-top: 350px;
 }
 
 div.dough { 
-    width: 65vh;
+    width: 30vw;
     margin-top: 150px;
     margin-left: 10px;
 }
@@ -505,13 +721,13 @@ div.dough {
 div.word.dough.one {    
     font-family: 'camp italic';
     font-size: 20px;
-    width: 3vh;
+    width: 3vw;
     margin-right: 40px;
     margin-left: 200px;
 }
 
 div.timer { 
-    width: 50vh;
+    width: 25vw;
     margin-top: 150px;
     margin-left: 10px;
 }
@@ -519,7 +735,7 @@ div.timer {
 div.word.timer.one {    
     font-family: 'camp bold';
     font-size: 20px;
-    width:4vh;
+    width:4vw;
     margin-top: 250px;
     margin-left: 40px;
 }
@@ -527,14 +743,14 @@ div.word.timer.one {
 div.word.timer.two {    
     font-family: 'camp bold';
     font-size: 20px;
-    width: 6vh;
+    width: 6vw;
     margin-top: 300px;
 }
 
 div.word.timer.three {  
     font-family: 'camp bold';
     font-size: 20px;
-    width: 8vh;
+    width: 8vw;
     margin-top: 350px;
 }
 
@@ -547,7 +763,7 @@ div.bakingbread {
 div.bakingbread.one {   
     font-family: 'camp italic';
     font-size: 20px;
-    width: 3vh;
+    width: 3vw;
     margin-right: 40px;
     margin-left: 700px;
 }
@@ -561,13 +777,13 @@ div.loaf {
 div.word.loaf.one { 
     font-family: 'camp bold';
     font-size: 20px;
-    width:4vh;
+    width:4vw;
     margin-top: 250px;
     margin-left: 40px;
 }
 
 div.cutbread {  
-    width: 90vh;
+    width: 90vw;
     margin-top: 30px;
     margin-left: 100px;
 }
@@ -580,6 +796,245 @@ div.word.cutbread.one {
     margin-left: 200px;
 }
 
-div.bloodarticle {
-    margin-bottom: 1700px;
+div.onion { 
+    width: 25vw;
+    margin-top: 150px;
+    margin-left: 60px;
 }
+
+div.word.chop { 
+    font-family: 'camp italic';
+    font-size: 20px;
+    width:4vh;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+div.ginger {    
+    width: 30vw;
+    margin-top: 150px;
+    margin-left: 80px;
+}
+
+div.chilli {    
+    width: 30vw;
+    margin-top: 150px;
+    margin-left: 30px;
+}
+
+div.oil {    
+    width: 17vw;
+    margin-top: 150px;
+    margin-left: 50px;
+}
+
+div.word.oil.one {    
+    font-family: 'camp bold';
+    font-size: 20px;
+    width:4vw;
+    margin-top: 250px;
+    margin-left: 40px;
+}
+
+div.word.oil.two {    
+    font-family: 'camp bold';
+    font-size: 20px;
+    width: 6vw;
+    margin-top: 300px;
+}
+
+div.word.oil.three {  
+    font-family: 'camp bold';
+    font-size: 20px;
+    width: 8vw;
+    margin-top: 330px;
+}
+
+div.oilpan {    
+    width: 45vw;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+div.word.sizzle {   
+    font-family: 'camp italic';
+    font-size: 20px;
+    width:4vw;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+div.potato {    
+    width: 25vw;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+div.word.mash { 
+    font-family: 'camp italic';
+    font-size: 20px;
+    width:4vw;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+div.mint {  
+    width: 25vw;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+div.salt {  
+    width: 14vw;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+div.word.salt.one {    
+    font-family: 'camp bold';
+    font-size: 20px;
+    width:4vw;
+    margin-top: 250px;
+    margin-left: 40px;
+}
+
+div.word.salt.two {    
+    font-family: 'camp bold';
+    font-size: 20px;
+    width: 6vw;
+    margin-top: 300px;
+}
+
+div.word.salt.three {  
+    font-family: 'camp bold';
+    font-size: 20px;
+    width: 8vw;
+    margin-top: 330px;
+}
+
+div.fish {  
+    width: 27vw;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+div.mortar {  
+    width: 26vw;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+div.word.smash {    
+    font-family: 'camp italic';
+    font-size: 20px;
+    width:4vh;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+div.cracked {   
+    width: 26vw;
+    margin-top: 50px;
+    margin-left: 120px;
+}
+
+div.whiskbowl { 
+    width: 30vw;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+div.fishball {  
+    width: 30vw;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+div.meen {  
+    width: 26vw;
+    margin-top: 50px;
+    margin-left: 110px;
+}
+
+div.intestine { 
+    width: 26vw;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+div.word.slush.one {    
+    font-family: 'camp bold';
+    font-size: 20px;
+    width:4vw;
+    margin-top: 250px;
+    margin-left: 40px;
+}
+
+div.word.slush.two {    
+    font-family: 'camp bold';
+    font-size: 20px;
+    width: 6vw;
+    margin-top: 300px;
+}
+
+div.word.slush.three {  
+    font-family: 'camp bold';
+    font-size: 20px;
+    width: 8vw;
+    margin-top: 330px;
+}
+div.sealintestine { 
+    width: 30vw;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+div.boilwater { 
+    width: 28vw;
+    margin-top: 50px;
+    margin-left: 60px;
+}
+
+div.berry { 
+    width: 20vw;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+div.strawberryjam { 
+    width: 20vw;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+div.cornstarch { 
+    width: 30vw;
+    margin-top: 50px;
+    margin-left: 120px;
+}
+
+div.creamcheese { 
+    width: 27vw;
+    margin-top: 50px;
+    margin-left: 90px;
+}
+
+div.prepie { 
+    width: 27vw;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+div.mixing { 
+    width: 27vw;
+    margin-top: 50px;
+    margin-left: 130px;
+}
+
+div.salmonberrypie { 
+    width: 32vw;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-bottom: 100px;
+}
+
